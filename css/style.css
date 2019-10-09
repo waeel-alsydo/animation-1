@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 95vh;
+    position: relative;
+}
+div:first-of-type{
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 50%;
+    animation: mymove 8s infinite;
+}
+div:nth-child(2){
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 50%;
+    animation: mymove 8s 2s infinite;
+}
+div:nth-child(3){
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 50%;
+    animation: mymove 8s 4s infinite;
+}
+div:nth-child(4){
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 50%;
+    animation: mymove 8s 6s infinite;
+}
+@keyframes mymove{
+    0%,100%{left: 0%; top: 0%;}
+    25%{left: 95%;top: 0%;background-color: blue;}
+    50%{top: 95%;left: 95%;background-color: green;}
+    75%{left: 0%; top: 95%;background-color: pink;}
+}
